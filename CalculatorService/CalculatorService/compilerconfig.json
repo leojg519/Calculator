@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Scripts/CalculatorStyles/addition.css",
+    "inputFile": "Scripts/CalculatorStyles/addition.less"
+  },
+  {
+    "outputFile": "Scripts/CalculatorStyles/calculator.css",
+    "inputFile": "Scripts/CalculatorStyles/calculator.less"
+  }
+]

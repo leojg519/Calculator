@@ -1,0 +1,100 @@
+body button {
+  height: 35px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  outline: none;
+  margin: 0 10px;
+  width: 20%;
+}
+body button:hover {
+  opacity: 0.9;
+}
+body button:active {
+  opacity: 0.5;
+}
+body .operand {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 0;
+}
+body .operand input {
+  text-align: center;
+  width: 40%;
+}
+body .operand input.error {
+  border: 1px solid red;
+}
+body .buttons-container {
+  padding: 20px 0;
+  text-align: center;
+}
+body #operands-container {
+  text-align: center;
+  padding-top: 30px;
+}
+body #operands-actions #new-operand {
+  background-color: #31acea;
+}
+body #operands-actions #remove-operand {
+  background-color: #f46332;
+}
+body #calculate-reset #calculate-total {
+  background-color: #4ed551;
+}
+body #calculate-reset #reset-form {
+  background-color: #9d9d9d;
+}
+body #result-container {
+  display: none;
+  text-align: center;
+}
+body #result-container h4 {
+  color: #3e2cdd;
+}
+body #result-container #calculation-result,
+body #result-container #quotient-result,
+body #result-container #remainder-result {
+  color: #f8814a;
+}
+body #result-container table {
+  width: 100%;
+  margin: 40px 0;
+}
+body #result-container table thead {
+  border-bottom: 1px solid #cfcfcf;
+  color: #f8814a;
+}
+body #result-container table thead th {
+  text-align: center;
+  padding: 10px 0;
+}
+body #result-container table tbody tr {
+  color: #000;
+}
+body #result-container table tbody tr td {
+  padding: 10px 0;
+}
+body #reset-form {
+  display: none;
+}
+body #error-message {
+  display: none;
+  text-align: center;
+}
+body #error-message .error-container {
+  width: 50%;
+  margin: auto;
+  border: 1px solid red;
+  padding: 10px;
+  background-color: #ffe3e3;
+  color: red;
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}

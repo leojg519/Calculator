@@ -1,0 +1,133 @@
+﻿body {
+    button {
+        height: 35px;
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+        border-radius: 4px;
+        border: none;
+        color: #fff;
+        outline: none;
+        margin: 0 10px;
+        width: 20%;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    .operand {
+        text-align: center;
+        display: inline-block;
+        padding: 10px 0;
+
+        input {
+            text-align: center;
+            width: 40%;
+
+            &.error {
+                border: 1px solid red;
+            }
+        }
+    }
+
+    .buttons-container {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #operands-container {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    #operands-actions {
+        #new-operand {
+            background-color: #31acea;
+        }
+
+        #remove-operand {
+            background-color: #f46332;
+        }
+    }
+
+    #calculate-reset {
+        #calculate-total {
+            background-color: #4ed551;
+        }
+
+        #reset-form {
+            background-color: #9d9d9d;
+        }
+    }
+
+    #result-container {
+        display: none;
+        text-align: center;
+
+        h4 {
+            color: #3e2cdd;
+        }
+
+        #calculation-result,
+        #quotient-result,
+        #remainder-result {
+            color: #f8814a;
+        }
+
+        table {
+            width: 100%;
+            margin: 40px 0;
+
+            thead {
+                border-bottom: 1px solid #cfcfcf;
+                color: #f8814a;
+
+                th {
+                    text-align: center;
+                    padding: 10px 0;
+                }
+            }
+
+            tbody {
+                tr {
+                    color: #000;
+
+                    td {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #reset-form {
+        display: none;
+    }
+
+    #error-message {
+        display: none;
+        text-align: center;
+
+        .error-container {
+            width: 50%;
+            margin: auto;
+            border: 1px solid red;
+            padding: 10px;
+            background-color: #ffe3e3;
+            color: red;
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

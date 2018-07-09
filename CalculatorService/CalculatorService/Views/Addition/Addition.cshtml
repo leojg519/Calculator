@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Addition";
+}
+
+<h2>@ViewBag.Title</h2>
+<h3>Here it is possible to compute the <b>addition</b> of two or more operands.</h3>
+<h3>This version allows only positive integer operations.</h3>
+
+<div class="row">
+    <div id="operands-container" class="col-xs-12">
+        <div class="operand op0">
+            <input />
+        </div>
+        <span>+</span>
+        <div class="operand op1">
+            <input />
+        </div>
+    </div>
+</div>
+
+<br />
+
+<div id="error-message" class="col-xs-12">
+    <div class="error-container">
+        <span></span>
+    </div>
+</div>
+
+<br />
+
+<div id="result-container" class="col-xs-12">
+    <h4>The total value of your calculation is: </h4>
+    <h2 id="calculation-result"></h2>
+</div>
+
+<br />
+
+<div id="operands-actions" class="col-xs-12 buttons-container">
+    <button id="new-operand">New operand</button>
+    <button id="remove-operand">Remove operand</button>
+</div>
+
+<br />
+
+<div id="calculate-reset" class="col-xs-12 buttons-container">
+    <button id="calculate-total">Calculate total</button>
+    <button id="reset-form">Reset</button>
+</div>
+
+
+@Scripts.Render("~/scripts/addition")
