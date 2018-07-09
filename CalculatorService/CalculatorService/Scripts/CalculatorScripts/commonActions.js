@@ -1,4 +1,4 @@
-﻿var numberOfOperands = 2;
+var numberOfOperands = 2;
 
 $(document).ready(function () {
     $('#remove-operand').click(function (e) {
@@ -12,16 +12,14 @@ $(document).ready(function () {
     
     // Allow only numeric values in the operand inputs
     $(document).on('keydown', '.operand input', function (e) {
-        if (e.keyCode < 48 || e.keyCode > 57) {
+        if ((e.keyCode < 48 || e.keyCode > 57) && e.keyCode !== 8 && e.keyCode != 46) {
             e.preventDefault();
+        } else {
+            $(this).removeClass('error');
+            $('#error-message span').text('');
+            $('#error-message').hide();
         }
-    });
-
-    $(document).on('keydown', '.operand input.error', function () {
-        $(this).removeClass('error');
-        $('#error-message span').text('');
-        $('#error-message').hide();
-    });    
+    });   
 });
 
 function getOperands() {
