@@ -32,7 +32,7 @@
                 manageResponse(response);
             },
             error: function (error) {
-                console.log(error);
+                showErrorMessage(error.responseJSON.Message);
             }
         });
     });
